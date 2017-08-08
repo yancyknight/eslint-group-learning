@@ -1,0 +1,23 @@
+{
+  "name": "eslint-explore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint src --color",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --color", "git add"]
+  },
+  "author": "Yancy Knight yancy.knight@usurf.usu.edu",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^4.0.2"
+  },
+  "pre-push": [
+    "test"
+  ]
+}
