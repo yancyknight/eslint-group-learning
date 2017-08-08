@@ -57,6 +57,18 @@ to automaticaly fix anything that can be fixed automatically, like missing semic
 ✖ 4 problems (4 errors, 0 warnings)
 ```
 
+## ESLint with multiple config files
+
+ESLint uses cascading config files. That means it starts in the current directory, and if it finds an ESLint config file, it will load the settings inside. It will then move up one directory and look again. If it finds another config, it will load any settings that wouldn't override settings from the first config. It will continue until it hits the root of the filesystem or a config file with the `"root": true` setting.
+
+Looking at the `nested.js` file, we see that we are using double quotes and a console.log statement, which are both set to raise an error in our root settings folder. If we run
+
+```
+eslint nested_folder/
+```
+
+we don't see any output. That's because we're overriding the base settings in `nested_foler/.eslintrc.json`.
+
 ## ESLint in Sublime Text
 Follow the installation instructions here 
 
