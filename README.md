@@ -64,7 +64,7 @@ ESLint uses cascading config files. That means it starts in the current director
 Looking at the `nested.js` file, we see that we are using double quotes and a console.log statement, which are both set to raise an error in our root settings folder. If we run
 
 ```
-eslint nested_folder/
+$ eslint nested_folder/
 ```
 
 we don't see any output. That's because we're overriding the base settings in `nested_foler/.eslintrc.json`.
