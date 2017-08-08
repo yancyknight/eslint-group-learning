@@ -21,14 +21,41 @@ In project root, run:
 ```
 $ eslint src/
 ```
+This will lint all the files in the `src` directory. You should see this output:
+```
+/eslint-group-learning/src/file1.js
+  1:17  error  Missing semicolon                           semi
+  3:5   error  'hello' is assigned a value but never used  no-unused-vars
+  5:5   error  'sup' is assigned a value but never used    no-unused-vars
 
-This will lint all the files in the `src` directory. There is an error in file1.js:1, a missing semicolon. Run:
+/eslint-group-learning/src/file2.js
+  1:17  error  Missing semicolon                           semi
+  3:5   error  'hello' is assigned a value but never used  no-unused-vars
+  5:5   error  'sup' is assigned a value but never used    no-unused-vars
+
+✖ 6 problems (6 errors, 0 warnings)
+  2 errors, 0 warnings potentially fixable with the `--fix` option.
+```
+
+ There are several errors, and a message that 2 errors are potentially fixable. Run:
 
 ```
 $ eslint src/ --fix
 ```
 
-to automaticaly fix anything that can be fixed automatically, like missing semicolons. We see in the output that the missing semicolon errors went away.
+to automaticaly fix anything that can be fixed automatically, like missing semicolons. We see in the output that the missing semicolon errors went away:
+
+```
+/eslint-group-learning/src/file1.js
+  3:5  error  'hello' is assigned a value but never used  no-unused-vars
+  5:5  error  'sup' is assigned a value but never used    no-unused-vars
+
+/eslint-group-learning/src/file2.js
+  3:5  error  'hello' is assigned a value but never used  no-unused-vars
+  5:5  error  'sup' is assigned a value but never used    no-unused-vars
+
+✖ 4 problems (4 errors, 0 warnings)
+```
 
 ## ESLint in Sublime Text
 Follow the installation instructions here 
