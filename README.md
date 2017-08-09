@@ -110,7 +110,7 @@ This option should be used sparingly, if ever.
 
 The full ruleset can be found [here](http://eslint.org/docs/rules/). It is also quite easy to write your own rules.
 
-## Turning off ESLint in comments
+## Turning off ESLint Using Comments
 
 In `src/file2.js`, add `//eslint-disable-line` to the end of line 5. Run ESLint again and you will see errors disappear from the output. Now remove the semicolon from line 5, creating two errors on that line, and change the comment to say `//eslint-disable-line no-unused-vars`. The `no-unused-vars` error now goes away, but the `semi` error is still there.
 
