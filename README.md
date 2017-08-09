@@ -79,7 +79,7 @@ Follow the installation instructions here
  ## ESLint in Visual Studio Code
 
  Install the ESLint plugin by Dirk Baeumer in the plugin bar. This plugin:
-- Runs ESLint automatically on save
+- Runs ESLint automatically as you type. You can configure it to run on save as well.
 - Shows errors in the bottom left corner of the editor
 - Underlines errors and warnings with red or green squiggles
 - Gives you a light bulb with the option to auto fix some errors.
