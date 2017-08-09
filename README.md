@@ -70,9 +70,7 @@ $ eslint nested_folder/
 we don't see any output. That's because we're overriding the base settings in `nested_foler/.eslintrc.json`.
 
 ## ESLint in Sublime Text
-Follow the installation instructions here 
-
-`https://packagecontrol.io/packages/ESLint`
+Follow the installation instructions [here](https://packagecontrol.io/packages/ESLint)
 
  to install the ESLint plugin for Sublime Text 2 and 3. This plugin allows you to right click or use `Crtl + Alt + E` to run ESLint in your editor and show output there.
 
@@ -107,3 +105,7 @@ If we really need to commit, we can run:
 $ git commit -m --no-verify "It's gonna break, but go through anyway"
 ```
 This option should be used sparingly, if ever.
+
+## ESLint Rules
+
+The full ruleset can be found [here](http://eslint.org/docs/rules/). It is also quite easy to write your own rules.
